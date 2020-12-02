@@ -2,27 +2,27 @@
 <configuration>
 	<feature automatic="selected" name="UNO_DamienCantin"/>
 	<feature automatic="selected" name="Players"/>
-	<feature automatic="unselected" name="2"/>
+	<feature automatic="selected" manual="selected" name="2"/>
 	<feature automatic="unselected" name="3"/>
 	<feature automatic="unselected" name="4"/>
 	<feature automatic="unselected" name="5"/>
-	<feature manual="selected" name="6"/>
+	<feature automatic="unselected" name="6"/>
 	<feature automatic="unselected" name="7"/>
 	<feature automatic="selected" name="Rules"/>
-	<feature automatic="selected" manual="selected" name="Base"/>
-	<feature name="Points"/>
-	<feature automatic="unselected" name="2 players game"/>
+	<feature automatic="selected" name="Base"/>
+	<feature manual="selected" name="Points"/>
+	<feature manual="selected" name="2 players game"/>
 	<feature automatic="selected" manual="selected" name="Variants"/>
 	<feature automatic="selected" manual="selected" name="Hand"/>
-	<feature manual="selected" name="Hands Down"/>
-	<feature name="Three Hand Uno"/>
+	<feature name="Hands Down"/>
+	<feature manual="selected" name="Three Hand Uno"/>
 	<feature automatic="selected" manual="selected" name="Special Card"/>
-	<feature automatic="selected" manual="selected" name="Wild card"/>
-	<feature automatic="unselected" name="Showdown"/>
-	<feature manual="selected" name="Roulette "/>
+	<feature name="Wild card"/>
+	<feature name="Showdown"/>
+	<feature name="Roulette "/>
 	<feature manual="selected" name="Time Bomb"/>
-	<feature manual="selected" name="Uno Mao"/>
+	<feature name="Uno Mao"/>
 	<feature name="Stacking "/>
-	<feature name="Exhange card 0"/>
+	<feature manual="selected" name="Exhange card 0"/>
 	<feature name="Suite"/>
 </configuration>
