@@ -1,0 +1,25 @@
+{
+	"Base": {
+		"Points": true,
+		"Cry Uno": false,
+		"Same color": true,
+		"Same number": true
+	},
+	"Variants": {
+		"Hand": {
+			"Hands Down": false,
+			"Tree Hands Uno": true
+		},
+		"Special Card": {
+			"Wild Card": {
+				"ShowDown": false,
+				"Roulette": true
+			},
+			"TimeBomb": true
+		},
+		"Stacking": {
+			"All cards": true,
+			"All except special cards": false
+		}
+	}
+}
