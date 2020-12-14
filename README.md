@@ -67,7 +67,8 @@ DSL: Créer un compilateur pour notre DSL dans notre language préféré (Python
 
 JSON: Utiliser la librairie GOOGLE GSON de JAVA, ce qui permettrait de générer nos règles. 
 
-#5) Pour traduire un programme écrit dans ma DSL en Json, j'utiliserais les annotations avec Java (Jackson) pour générer des fichiers de configurations JSON.
+#5) Pour traduire un programme écrit dans ma DSL en Json, j'utiliserais les annotations pour générer des fichiers de configurations JSON.
+Pour traduire mon JSON en programme de ma DSL, je définirais un parser pour lire le JSON et créer du code de ma DSL
 
 
 
