@@ -9,13 +9,13 @@ Il n'existe pas de nombre définis de variantes. En effet chacun peut se créer 
 Le FM à été conçu avec FeatureIDE. Vous pourrez le trouver dans le dossier FeatureModel. Il existe 2 types de variantes, les variantes de base (comptage des points, crier 'UNO' ...) et les variantes additionnelles (Uno Mao, superposition +2 / +4)
 
 #2) Conception d'une grammaire xtext simple. exemple:
-
+```
 Uno game test1:
 
 Base: Points - Cry Uno
 
 Variants: Exchange Card - Special Cards: Card Bomb / WildCard: Roulette
-
+```
 J'ai fais le choix de séparer les variantes par des '-' et les sous variantes par des '/'. 
 
 
