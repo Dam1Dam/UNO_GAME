@@ -8,7 +8,7 @@ Il n'existe pas de nombre défini de variantes. En effet chacun peut se créer s
 
 Le FM a été conçu avec FeatureIDE. Vous pourrez le trouver dans le dossier FeatureModel. Il existe 2 types de variantes, les variantes de base (comptage des points, crier 'UNO' ...) et les variantes additionnelles (Uno Mao, superposition +2 / +4)
 
-Avec mon FM nous sommes capables de former plus de 2000 configurations possibles.
+Avec mon FM nous pouvons choisir 15 variantes. Ce qui permet de réaliser beaucoup de configurations.
 
 #2) Conception d'une grammaire xtext simple. exemple:
 ```
@@ -67,7 +67,7 @@ DSL: Créer un compilateur pour notre DSL dans notre language préféré (Python
 
 JSON: Utiliser la librairie GOOGLE GSON de JAVA, ce qui permettrait de générer nos règles. 
 
-#5) Pour traduire un programme écrit dans ma DSL en Json ou vice versa, j'utiliserais le parser généré par XText (ANTLR). Je peux à partir de ce parser générer du code en JSON. 
+#5) Pour traduire un programme écrit dans ma DSL en Json, j'utiliserais les annotations avec Java (Jackson) pour générer des fichiers de configurations JSON.
 
 
 
