@@ -4,9 +4,11 @@ IDM
 
 #1)
 
-Il n'existe pas de nombre définis de variantes. En effet chacun peut se créer sa propre variante.
+Il n'existe pas de nombre défini de variantes. En effet chacun peut se créer sa propre variante.
 
-Le FM à été conçu avec FeatureIDE. Vous pourrez le trouver dans le dossier FeatureModel. Il existe 2 types de variantes, les variantes de base (comptage des points, crier 'UNO' ...) et les variantes additionnelles (Uno Mao, superposition +2 / +4)
+Le FM a été conçu avec FeatureIDE. Vous pourrez le trouver dans le dossier FeatureModel. Il existe 2 types de variantes, les variantes de base (comptage des points, crier 'UNO' ...) et les variantes additionnelles (Uno Mao, superposition +2 / +4)
+
+Avec mon FM nous sommes capables de former plus de 2000 configurations possibles.
 
 #2) Conception d'une grammaire xtext simple. exemple:
 ```
@@ -54,7 +56,7 @@ Je suis parti d'un json de base répertoriant toute les variantes:
 }
 ```
 
-J'ai fait le choix dans le json schema de ne pas mettre les variantes en "required". Ainsi on peux écrire des json sans obligatoirement mettre la variante (nous pouvons toutefois la mettre à false, voir les exemples dans le dossier JSON). De plus j'ai mis le additionalProperties à false. Empêchant d'ajouter des élements. Vous pourrez observer différentes configurations et le schema dans le dossier JSON.
+J'ai fait le choix dans le json schema de ne pas mettre les variantes en "required". Ainsi on peut écrire des json sans obligatoirement mettre la variante (nous pouvons toutefois la mettre à false, voir les exemples dans le dossier JSON). De plus j'ai mis le additionalProperties à false. Empêchant d'ajouter des éléments. Vous pourrez observer différentes configurations et le schéma dans le dossier JSON.
 
 
 #4) 
