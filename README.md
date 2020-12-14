@@ -21,15 +21,16 @@ J'ai fais le choix de séparer les variantes par des '-' et les sous variantes p
 
 
 #3) Création d'un schéma JSON à l'aide de https://jsonschema.net/. 
-Je suis parti d'un json de base répertoriant toute les variantes retenues :
-`{
+Je suis parti d'un json de base répertoriant toute les variantes:
+```
+{
             "Base": {
                 "Points": true,
                 "Cry Uno": true,
                 "Same color": true,
                 "Same number": true
             },
-            "variants": {
+            "Variants": {
                 "Hand": {
                     "Hands Down": true,
                     "Tree Hands Uno": true
@@ -50,9 +51,10 @@ Je suis parti d'un json de base répertoriant toute les variantes retenues :
                 "Exchange Card": true,
                 "Suite": true
             }
-}`
+}
+```
 
-J'ai fait le choix dans le json schema de ne pas mettre les variantes en "required". Ainsi on peux écrire des json sans obligatoirement mettre la variante (nous pouvons toutefois la mettre à false, voir les exemples dans le dossier JSON). De plus j'ai mis le additionalProperties à false. Empêchant d'ajouter des élements. Vous pourrez observer différentes configurations dans le dossier JSON
+J'ai fait le choix dans le json schema de ne pas mettre les variantes en "required". Ainsi on peux écrire des json sans obligatoirement mettre la variante (nous pouvons toutefois la mettre à false, voir les exemples dans le dossier JSON). De plus j'ai mis le additionalProperties à false. Empêchant d'ajouter des élements. Vous pourrez observer différentes configurations et le schema dans le dossier JSON.
 
 
 #4) 
