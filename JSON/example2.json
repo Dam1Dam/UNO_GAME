@@ -1,0 +1,19 @@
+{
+	"Base": {
+		"Points": true,
+		"Cry Uno": true
+	},
+	"Variants": {
+		"Hand": {
+			"Hands Down": true,
+			"Tree Hands Uno": false
+		},
+		"Special Card": {
+			"Wild Card": {
+				"ShowDown": true,
+				"Roulette": true
+			},
+			"TimeBomb": false
+		}
+	}
+}

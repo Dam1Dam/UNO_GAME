@@ -1,0 +1,317 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "Base": {
+                "Points": true,
+                "Cry Uno": true,
+                "Same color": true,
+                "Same number": true
+            },
+            "Variants": {
+                "Hand": {
+                    "Hands Down": true,
+                    "Tree Hands Uno": true
+                },
+                "Special Card": {
+                    "Wild Card": {
+                        "ShowDown": true,
+                        "Roulette": true
+                    },
+                    "TimeBomb": true
+                },
+                "Stacking": {
+                    "All cards": true,
+                    "All except special cards": true
+                },
+                "2 players game": true,
+                "Uno Mao": true,
+                "Exchange Card": true,
+                "Suite": true
+            }
+        }
+    ],
+    "required": [],
+    "properties": {
+        "Base": {
+            "$id": "#/properties/Base",
+            "type": "object",
+            "title": "The Base schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "Points": true,
+                    "Cry Uno": true,
+                    "Same color": true,
+                    "Same number": true
+                }
+            ],
+            "required": [],
+            "properties": {
+                "Points": {
+                    "$id": "#/properties/Base/properties/Points",
+                    "type": "boolean",
+                    "title": "The Points schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "Cry Uno": {
+                    "$id": "#/properties/Base/properties/Cry%20Uno",
+                    "type": "boolean",
+                    "title": "The Cry Uno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "Same color": {
+                    "$id": "#/properties/Base/properties/Same%20color",
+                    "type": "boolean",
+                    "title": "The Same color schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "Same number": {
+                    "$id": "#/properties/Base/properties/Same%20number",
+                    "type": "boolean",
+                    "title": "The Same number schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "Variants": {
+            "$id": "#/properties/variants",
+            "type": "object",
+            "title": "The variants schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "Hand": {
+                        "Hands Down": true,
+                        "Tree Hands Uno": true
+                    },
+                    "Special Card": {
+                        "Wild Card": {
+                            "ShowDown": true,
+                            "Roulette": true
+                        },
+                        "TimeBomb": true
+                    },
+                    "Stacking": {
+                        "All cards": true,
+                        "All except special cards": true
+                    },
+                    "2 players game": true,
+                    "Uno Mao": true,
+                    "Exchange Card": true,
+                    "Suite": true
+                }
+            ],
+            "required": [],
+            "properties": {
+                "Hand": {
+                    "$id": "#/properties/variants/properties/Hand",
+                    "type": "object",
+                    "title": "The Hand schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "Hands Down": true,
+                            "Tree Hands Uno": true
+                        }
+                    ],
+                    "required": [],
+                    "properties": {
+                        "Hands Down": {
+                            "$id": "#/properties/variants/properties/Hand/properties/Hands%20Down",
+                            "type": "boolean",
+                            "title": "The Hands Down schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        },
+                        "Tree Hands Uno": {
+                            "$id": "#/properties/variants/properties/Hand/properties/Tree%20Hands%20Uno",
+                            "type": "boolean",
+                            "title": "The Tree Hands Uno schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "Special Card": {
+                    "$id": "#/properties/variants/properties/Special%20Card",
+                    "type": "object",
+                    "title": "The Special Card schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "Wild Card": {
+                                "ShowDown": true,
+                                "Roulette": true
+                            },
+                            "TimeBomb": true
+                        }
+                    ],
+                    "required": [],
+                    "properties": {
+                        "Wild Card": {
+                            "$id": "#/properties/variants/properties/Special%20Card/properties/Wild%20Card",
+                            "type": "object",
+                            "title": "The Wild Card schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "ShowDown": true,
+                                    "Roulette": true
+                                }
+                            ],
+                            "required": [],
+                            "properties": {
+                                "ShowDown": {
+                                    "$id": "#/properties/variants/properties/Special%20Card/properties/Wild%20Card/properties/ShowDown",
+                                    "type": "boolean",
+                                    "title": "The ShowDown schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": false,
+                                    "examples": [
+                                        true
+                                    ]
+                                },
+                                "Roulette": {
+                                    "$id": "#/properties/variants/properties/Special%20Card/properties/Wild%20Card/properties/Roulette",
+                                    "type": "boolean",
+                                    "title": "The Roulette schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": false,
+                                    "examples": [
+                                        true
+                                    ]
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "TimeBomb": {
+                            "$id": "#/properties/variants/properties/Special%20Card/properties/TimeBomb",
+                            "type": "boolean",
+                            "title": "The TimeBomb schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "Stacking": {
+                    "$id": "#/properties/variants/properties/Stacking",
+                    "type": "object",
+                    "title": "The Stacking schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "All cards": true,
+                            "All except special cards": true
+                        }
+                    ],
+                    "required": [],
+                    "properties": {
+                        "All cards": {
+                            "$id": "#/properties/variants/properties/Stacking/properties/All%20cards",
+                            "type": "boolean",
+                            "title": "The All cards schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        },
+                        "All except special cards": {
+                            "$id": "#/properties/variants/properties/Stacking/properties/All%20except%20special%20cards",
+                            "type": "boolean",
+                            "title": "The All except special cards schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "2 players game": {
+                    "$id": "#/properties/variants/properties/2%20players%20game",
+                    "type": "boolean",
+                    "title": "The 2 players game schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "Uno Mao": {
+                    "$id": "#/properties/variants/properties/Uno%20Mao",
+                    "type": "boolean",
+                    "title": "The Uno Mao schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "Exchange Card": {
+                    "$id": "#/properties/variants/properties/Exchange%20Card",
+                    "type": "boolean",
+                    "title": "The Exchange Card schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "Suite": {
+                    "$id": "#/properties/variants/properties/Suite",
+                    "type": "boolean",
+                    "title": "The Suite schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
