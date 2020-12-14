@@ -1,0 +1,47 @@
+grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
+ 
+UNO_DamienCantin:
+	uno='Uno game' + var=ID + ':'
+	(base= BaseVariants
+	variants= Variants)?;
+	
+BaseVariants:
+	'Base:' BaseVariant ('/' BaseVariant)*  
+;
+
+BaseVariant: 	
+	('Points' | 'Cry Uno' | 'Same number' | 'Same Color')
+;
+
+Variants:	
+	'Variants:' Variant ('/' Variant)*
+;
+
+Variant:
+	(Hands | SpecialCards | Stacking | '2 players game' | 'Uno Mao' | 'Exchange Card' | 'Suite')
+;
+
+Hands:
+	'Hands:' Hand ('/' Hand)*
+;
+
+Hand:
+	('Hands Down' | 'Three Hands Uno')
+;
+
+SpecialCards:
+	'Special Cards:' SpecialCard ('/' SpecialCard)
+;
+
+SpecialCard:
+	( WildCard | 'Card Bomb' )
+;
+WildCard:
+	'WildCard:' ('ShownDown' | 'Roulette')
+;
+
+Stacking:
+	'Stacking:' ('All Cards' | 'All except special cards')
+;

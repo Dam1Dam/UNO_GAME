@@ -1,0 +1,84 @@
+grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
+ /* 
+UNO_DamienCantin:
+	( uno='Uno game' + var=ID + ':'
+	base= Base*
+	variants= Variants*)?;
+	
+Base:
+	'Base:' + ('Points' | 'Cry Uno' | 'Same number' | 'Same Color')
+;
+
+Variants:
+	
+	'Variant:' + (Hand | SpecialCard | Stacking | '2 players game' | 'Uno Mao' | 'Exchange Card' | 'Suite')
+;
+
+Hand :
+	'Hand:'+ ('Hands Down' | 'Three Hands Uno')
+;
+
+SpecialCard:
+	'Special Card:' + ( WildCard | 'Card Bomb' )
+;
+WildCard:
+	'WildCard:' + ('ShownDown' | 'Roulette')
+;
+
+Stacking:
+	'Stacking:' + ('All Cards' | 'All except special cards')
+;
+*/
+
+
+Uno:
+    'UNO' 'game:' game=ID 'numberOfPlayer:'? nop=INT? '{' rules=Rules '}';
+
+Rules:
+    'Rules' '{' (Original | (variants+=Variant+Coma)+) '}';
+
+Coma:
+    ','
+;
+
+Original:
+    'Original'
+;
+
+Variant:
+    Challenge | CardsEffect | Interception | CumulatingMalus | HandsDown | WithoutMalus
+;
+
+Challenge:
+    'Challenge'
+;
+
+CardsEffect:
+    'CardsEffect:' + (effects+=Effect+Coma)+
+;
+
+Effect:
+    ('card0' | 'card7')
+;
+
+Interception:
+    'Interception'
+;
+
+CumulatingMalus:
+    'CumulatingMalus:' + (malus+=Malus+Coma)+
+;
+
+Malus:
+    ('+2' | '+4')
+;
+
+HandsDown:
+    'HandsDown'
+;
+
+WithoutMalus:
+    'WithoutMalus'
+;
