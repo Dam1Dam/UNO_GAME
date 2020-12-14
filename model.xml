@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="UNO_DamienCantin">
+			<and mandatory="true" name="Base">
+				<feature name="Points"/>
+				<feature name="Same color"/>
+				<feature name="Same number"/>
+				<feature name="Cry Uno">
+					<description>
+						Player with one card need to cry uno&#13;
+					</description>
+				</feature>
+			</and>
+			<or name="Variants">
+				<or name="Hand">
+					<feature name="Hands Down"/>
+					<feature name="Three Hand Uno"/>
+				</or>
+				<or name="Special Card">
+					<alt name="Wild card">
+						<graphics key="collapsed" value="false"/>
+						<feature name="Showdown"/>
+						<feature name="Roulette "/>
+					</alt>
+					<feature name="Time Bomb"/>
+				</or>
+				<feature name="2 players game"/>
+				<feature name="Uno Mao"/>
+				<alt name="Stacking ">
+					<feature name="All cards"/>
+					<feature name="All except Special Card"/>
+				</alt>
+				<feature name="Exhange card 0"/>
+				<feature name="Suite"/>
+			</or>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>Uno Mao</var>
+				<not>
+					<disj>
+						<var>Hand</var>
+						<disj>
+							<var>Special Card</var>
+							<disj>
+								<var>2 players game</var>
+								<disj>
+									<var>Stacking </var>
+									<disj>
+										<var>Exhange card 0</var>
+										<var>Suite</var>
+									</disj>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</not>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>

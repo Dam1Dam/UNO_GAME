@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
-	<feature name="UNO_DamienCantin"/>
-	<feature name="Players"/>
-	<feature name="2"/>
-	<feature name="3"/>
-	<feature name="4"/>
-	<feature name="5"/>
-	<feature name="6"/>
-	<feature name="7"/>
-	<feature name="Rules"/>
-	<feature name="Base"/>
-	<feature name="Points"/>
-	<feature name="2 players game"/>
+	<feature automatic="selected" manual="selected" name="UNO_DamienCantin"/>
+	<feature automatic="selected" name="Base"/>
+	<feature manual="selected" name="Points"/>
+	<feature manual="selected" name="Same color"/>
+	<feature manual="selected" name="Same number"/>
+	<feature manual="selected" name="Cry Uno"/>
 	<feature name="Variants"/>
 	<feature name="Hand"/>
 	<feature name="Hands Down"/>
@@ -21,8 +15,11 @@
 	<feature name="Showdown"/>
 	<feature name="Roulette "/>
 	<feature name="Time Bomb"/>
+	<feature name="2 players game"/>
 	<feature name="Uno Mao"/>
 	<feature name="Stacking "/>
+	<feature name="All cards"/>
+	<feature name="All except Special Card"/>
 	<feature name="Exhange card 0"/>
 	<feature name="Suite"/>
 </configuration>
