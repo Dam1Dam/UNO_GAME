@@ -61,4 +61,13 @@ J'ai fait le choix dans le json schema de ne pas mettre les variantes en "requir
 
 #4) 
 
+FM: Générer les règles à l'aide de JAXP, un parseur XML pour JAVA. 
+
+DSL: Créer un compilateur pour notre DSL dans notre language préféré (Python par exemple).
+
+JSON: Utiliser la librairie GOOGLE GSON de JAVA, ce qui permettrait de générer nos règles. 
+
+#5) Pour traduire un programme écrit dans ma DSL en Json ou vice versa, j'utiliserais le parser généré par XText (ANTLR). Je peux à partir de ce parser générer du code en JSON. 
+
+
 
